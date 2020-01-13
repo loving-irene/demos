@@ -33,7 +33,9 @@ while keep_going:
     else:
         picx -= speedx
         picy -= speedy
-    screen.fill(WHITE)
+
+    #如果不清除屏幕会有不一样的视觉效果
+    # screen.fill(WHITE)
     screen.blit(pic,(picx,picy))
     pygame.display.update()
     timer.tick(60)
